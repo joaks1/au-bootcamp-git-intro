@@ -19,7 +19,7 @@ At this point, you should have
 (2) been introduced to the very basics of [Git](https://git-scm.com/),
 and (3) be working in a group with about 3 other people.
 
-1.  All of you should login to your [Github](https://github.com/).
+1.  All of you should login to your [Github](https://github.com/) account.
 
 1.  **One** of you should fork
     [this repository](https://github.com/joaks1/au-bootcamp-git-intro), by
@@ -27,11 +27,11 @@ and (3) be working in a group with about 3 other people.
 
     ![Github fork button](util/images/github-fork-button.png)
 
-    After a few seconds, you should be looking your copy of the repo in your
-    account.
+    After a few seconds, the team member that forked should be looking at their
+    copy of the repo in their Github account account.
 
 1.  Next, the person that forked the repo needs to add their team members as
-    collabortors:
+    collaborators:
 
     1.  Click the 'Settings' tab near the top of the page.
 
@@ -41,18 +41,22 @@ and (3) be working in a group with about 3 other people.
 
         ![Github collaborators tab](util/images/github-collaborator-tab.png)
 
-    3.  You should be able to find your team members accounts by searching for
+    3.  You should be able to find your team members' accounts by searching for
         their Github **username**.
 
 1.  Each team member that is added will receive an invitation via e-mail to
-    collaborate on the repository. Accept the invitation and follow the link to
+    collaborate on the repo. Accept the invitation and follow the link to
     the forked repo on your team member's Github account.
 
-1.  At this point, you should all be on the the Github page of your team's
-    forked repo.
+1.  At this point, you should all be on the Github page of your team's forked
+    repo. Make sure you are on the page of your **team member's** forked repo,
+    **NOT** my copy of the repo (see image below).
 
-1.  Click the 'Clone or download' button, and copy the URL. (**ALL** team
-    members need to do this, including the one who forked the repo)
+    ![Github copy URL](util/images/github-account-info.png)
+
+1.  Click the 'Clone or download' button, and copy the URL of the repo via the
+    'copy to clipboard' button. (**ALL** team members need to do this,
+    including the one who forked the repo)
 
     ![Github copy URL](util/images/github-clipboard-button.png)
 
@@ -88,7 +92,8 @@ and (3) be working in a group with about 3 other people.
 The goal of this exercise is for you to work collaboratively with your team
 members to write a simple shell script.
 
-Type `ls` in the directory of the repo you just cloned. You should see:
+Type `ls` in the directory of the repo you just cloned. You should see
+something like:
 
     $ ls
     count-fasta-seqs.sh
@@ -99,15 +104,16 @@ Type `ls` in the directory of the repo you just cloned. You should see:
     run_tests.sh
     tests
     
-The file `count-fasta-seqs.sh` where you will write your shell script.
-Go ahead and open it with your preferred text editor (probably nano if you are
-working on the Alabama Super Computer and have become familiar with the nano
+The file `count-fasta-seqs.sh` is where you will write your shell script.  Go
+ahead and open it with your preferred text editor (probably `nano` if you are
+working on the Alabama Super Computer and have become familiar with the `nano`
 during the Bioinformatics Bootcamp).
-You will see that it currently just has a bunch of comments.
+You will see that the file is mostly just filled with comments (i.e., there's
+no code). 
 
 The file `run_tests.sh` is a script that runs a series of tests on the
-`count-fasta-seqs.sh` script. Since that script doesn't exist yet, all
-these tests currently fail. Try it:
+`count-fasta-seqs.sh` script. Since that code doesn't exist yet, all of these
+tests currently fail. Try it:
 
     $ sh run_tests.sh
     
@@ -165,15 +171,16 @@ Four tests were run and, as expected, they all failed.
 Your goal is to work collaboratively with your team members to add shell code
 to `count-fasta-seq.sh` until these tests pass.
 
-    NOTE: You do NOT need to know how the tests work! You only need to add code
-    to count-fasta-seq.sh (more on what that needs to do in the next section!)
+**NOTE: You do NOT need to know how the tests work! You only need to add code
+to count-fasta-seq.sh (more on what that entails in the next section!)**
 
 Make sure you are working together by sharing (`pushing` and `pulling`) your
 code as you go via Git.
 
 ## The script
 
-Now you need to know what the tests expect `count-fasta-seqs.sh` to be doing!
+Now, you need to know what the failing tests expect `count-fasta-seqs.sh` to be
+doing!
 Below, is some info about what this script should do, including what the inputs
 and output should be:
 
