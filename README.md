@@ -229,12 +229,12 @@ the command 'basename' for this:
     $ man basename
 
 To count the number of sequences in each file, I recommend you checkout
-'grep' and 'wc':
+`grep` and `wc`:
 
     $ man grep
     $ man wc
 
-**WARNING** about 'grep': ALWAYS quote the string that you are trying to find!
+**WARNING** about `grep`: ALWAYS quote the string that you are trying to find!
 For example, do:
 
     $ grep "string I want to find" file-i-want-to-find-it-in.txt
@@ -243,7 +243,7 @@ For example, do:
 
     $ grep string I want to find file-i-want-to-find-it-in.txt # DON'T DO THIS!
 
-To keep a tally of the total number of sequences across all files, 'expr'
+To keep a tally of the total number of sequences across all files, `expr`
 might be useful:
 
     $ man expr
