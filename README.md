@@ -184,47 +184,55 @@ doing!
 Below, is some info about what this script should do, including what the inputs
 and output should be:
 
-    INPUT:   Paths to one or more fasta sequence files.
+### Input
+
+Paths to one or more fasta sequence files.
     
-    OUTPUT:  For each file, it should write a line with the number of sequences
-             in the file, a space, and then the file NAME (NOT the path!), and a
-             final line with the total number of sequences across all files.
+### Output
+
+For each file, it should write a line with the number of sequences in the file,
+a space, and then the file NAME (NOT the path!), and a final line with the
+total number of sequences across all files.
     
-    EXAMPLE: In the same directory as this script, you should find an example
-             fasta file named 'example-seqs1.fasta', which contains:
+### Example
+
+In the same directory as this script, you should find an example fasta file
+named 'example-seqs1.fasta', which contains:
+
+    >RMB3263_Cyrtodactylus_philippinicus_Negros
+    CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
     
-             >RMB3263_Cyrtodactylus_philippinicus_Negros
-             CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
-             
-             >CWL052_Cyrtodactylus_philippinicus_Negros
-             CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
+    >CWL052_Cyrtodactylus_philippinicus_Negros
+    CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
+
+If you run this script on this fasta file like this
+
+    $ sh count-fasta-seqs.sh example-seqs1.fasta
+
+you want to get the following output:
+
+    2 example-seqs1.fasta
+    2
+
+There should be another example fasta file named 'example-seqs2.fasta', which
+contains:
+
+    >RMB7155_Sphenomorphus_arborens_Negros
+    ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
     
-             If you run this script on this fasta file, you want to get the
-             following output:
+    >RMB7156_Sphenomorphus_arborens_Negros
+    ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
     
-                 $ sh count-fasta-seqs.sh example-seqs1.fasta
-                 2 example-seqs1.fasta
-                 2
-    
-             There should be another example fasta file named
-             'example-seqs2.fasta', which contains:
-    
-             >RMB7155_Sphenomorphus_arborens_Negros
-             ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
-             
-             >RMB7156_Sphenomorphus_arborens_Negros
-             ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
-             
-             >RMB7163_Sphenomorphus_arborens_Negros
-             ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
-    
-             If you run this script on BOTH fasta files, you want to get the
-             following output:
-    
-                $ sh count-fasta-seqs.sh example-seqs1.fasta example-seqs2.fasta
-                2 example-seqs1.fasta
-                3 example-seqs2.fasta
-                5
+    >RMB7163_Sphenomorphus_arborens_Negros
+    ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
+
+If you run this script on BOTH fasta files, you want to get the
+following output:
+
+   $ sh count-fasta-seqs.sh example-seqs1.fasta example-seqs2.fasta
+   2 example-seqs1.fasta
+   3 example-seqs2.fasta
+   5
 
 ### Some hints to get you coding
 
