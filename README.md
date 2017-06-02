@@ -15,46 +15,60 @@ Bootcamp](http://www.auburn.edu/cosam/bioinformatics/) to using
 # Getting set up
 
 At this point, you should have
+(1) an account on [Github](https://github.com/),
+(2) been introduced to the very basics of [Git](https://git-scm.com/),
+and (3) be working in a group with about 3 other people.
 
-1.  an account on [Github](https://github.com/)
-2.  been introduced to the very basics of [Git](https://git-scm.com/).
+1.  All of you should login to your [Github](https://github.com/).
 
-Work in a group with about 2 other people. 
-All of you should login to your [Github](https://github.com/).
-**One** of you should fork [this
-repository](https://github.com/joaks1/au-bootcamp-git-intro), by clicking the
-'Fork' button on the upper right of this page.
-After a few seconds, you should be looking your copy of the repo in your
-account.
+1.  **One** of you should fork
+    [this repository](https://github.com/joaks1/au-bootcamp-git-intro), by
+    clicking the 'Fork' button on the upper right of the page.
 
-Next, the person that forked the repo needs to add their team members as
-collabortors:
+    After a few seconds, you should be looking your copy of the repo in your
+    account.
 
-1.  Click the 'Settings' tab near the top of the page.
-2.  Click 'Collaborators' in the settings menu along the left.
-3.  You should be able to find your team members accounts by searching for
-    their Github **username**.
+1.  Next, the person that forked the repo needs to add their team members as
+    collabortors:
 
-Each team member that is added will receive an invitation via e-mail to
-collaborate on the repository. Accept the invitation and follow the link to the
-forked repo on your team member's Github account.
-Once on the page of the forked repo, click the 'Clone or download' button, and
-copy the URL. (**ALL** team members need to do this, including the one who
-forked the repo)
-Then, in your terminal, navigate to where you want to keep this repo (you can
-always move it later, so just your home directory is fine). Then type:
+    1.  Click the 'Settings' tab near the top of the page.
+    2.  Click 'Collaborators' in the settings menu along the left.
+    3.  You should be able to find your team members accounts by searching for
+        their Github **username**.
 
-    $ git clone <the-url-you-just-copied>
+1.  Each team member that is added will receive an invitation via e-mail to
+    collaborate on the repository. Accept the invitation and follow the link to
+    the forked repo on your team member's Github account.
 
-and hit enter to clone the repository. Then `cd` into the directory:
+1.  At this point, you should all be on the the Github page of your team's
+    forked repo.
 
-    $ cd <the-name-of-directory-you-just-clone>
+1.  Click the 'Clone or download' button, and copy the URL. (**ALL** team
+    members need to do this, including the one who forked the repo)
 
-Now, all members of your team should be in their own local copy of the
-repository.
-Each of you now has your own *local* copy of the repository,
-and can `pull` and `push` changes from and to the *remote*
-copy of the repo hosted on Github.
+1.  In your terminal, navigate to where you want to keep this repo (you can
+    always move it later, so just your home directory is fine). Then type:
+
+        $ git clone <the-url-you-just-copied>
+
+    and hit enter to clone the repository.
+
+1.  Next, `cd` into the directory:
+
+        $ cd <the-name-of-directory-you-just-cloned>
+
+1.  At this point, all members of your team should be in their own local copy
+    of the repository.
+
+    Each of you now has your very own *local* copy of the repository, and can
+    `pull` and `push` changes from and to the *remote* copy of the repo hosted
+    on Github.
+
+    Note, there is nothing special about the *remote* copy. It is just like the
+    *local* copy of the repo you have. The only difference is that it is
+    located in a place you can all access (on a Github server).
+    This is what it means when we say Git is distributed; everyone has
+    a full copy of the entire repo!
 
 
 # Exercise
@@ -64,7 +78,7 @@ copy of the repo hosted on Github.
 The goal of this exercise is for you to work collaboratively with your team
 members to write a simple shell script.
 
-Type `ls` in the directory of the repo you just clone. You should see:
+Type `ls` in the directory of the repo you just cloned. You should see:
 
     $ ls
     count-fasta-seqs.sh
