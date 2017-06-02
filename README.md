@@ -25,6 +25,8 @@ and (3) be working in a group with about 3 other people.
     [this repository](https://github.com/joaks1/au-bootcamp-git-intro), by
     clicking the 'Fork' button on the upper right of the page.
 
+    ![Github fork button](util/images/github-fork-button.png)
+
     After a few seconds, you should be looking your copy of the repo in your
     account.
 
