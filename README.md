@@ -16,8 +16,8 @@ Bootcamp](http://www.auburn.edu/cosam/bioinformatics/) to using
 
 At this point, you should have
 
-#.  an account on [Github](https://github.com/)
-#.  been introduced to th very basics of [Git](https://git-scm.com/).
+1.  an account on [Github](https://github.com/)
+2.  been introduced to th very basics of [Git](https://git-scm.com/).
 
 Work in a group with about 2 other people. 
 All of you should login to your [Github](https://github.com/).
@@ -30,9 +30,9 @@ account.
 Next, the person that forked the repo needs to add their team members as
 collabortors:
 
-#.  Click the 'Settings' tab near the top of the page.
-#.  Click 'Collaborators' in the settings menu along the left.
-#.  You should be able to find your team members accounts by searching for
+1.  Click the 'Settings' tab near the top of the page.
+2.  Click 'Collaborators' in the settings menu along the left.
+3.  You should be able to find your team members accounts by searching for
     their Github **username**.
 
 Each team member that is added will receive an invitation via e-mail to
