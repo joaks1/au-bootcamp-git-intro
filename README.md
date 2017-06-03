@@ -1,6 +1,13 @@
+# Introduction
+
+The purpose of this exercise is to introduce the participants of the [Auburn
+University Bioinformatics
+Bootcamp](http://www.auburn.edu/cosam/bioinformatics/) to using
+[Git](https://git-scm.com/) to version control their science!
+
+
 # Contents
 
--   [Introduction](#introduction)
 -   [Getting set up](#getting-set-up)
 -   [Exercise](#exercise)
     -   [The goal](#the-goal)
@@ -12,12 +19,6 @@
 -   [Acknowledgments](#acknowledgments)
 -   [License](#license)
 
-# Introduction
-
-The purpose of this exercise is to introduce the participants of the [Auburn
-University Bioinformatics
-Bootcamp](http://www.auburn.edu/cosam/bioinformatics/) to using
-[Git](https://git-scm.com/) to version control their science!
 
 # Getting set up
 
