@@ -237,10 +237,12 @@ contains:
 If you run this script on BOTH fasta files, you want to get the
 following output:
 
-    $ sh count-fasta-seqs.sh example-seqs1.fasta example-seqs2.fasta
-    2 example-seqs1.fasta
-    3 example-seqs2.fasta
-    5
+```bash
+$ sh count-fasta-seqs.sh example-seqs1.fasta example-seqs2.fasta
+2 example-seqs1.fasta
+3 example-seqs2.fasta
+5
+```
 
 ### Some hints to get you coding
 
@@ -301,7 +303,7 @@ Good luck!
 # Acknowledgments
 
 ## Material
-This exercise was inspired by, and borrowed heavily from, the Git exersise
+This exercise was inspired by, and borrowed heavily from, the Git exercise
 written by [Mark Holder](http://phylo.bio.ku.edu/content/mark-t-holder), which
 can be found at <https://github.com/mtholder/swc-tree-support-ex>.
 
