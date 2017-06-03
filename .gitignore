@@ -5,3 +5,5 @@ tests/test_in_dir_singleton/output/output.txt
 tests/test_nested_files/output/output.txt
 tests/test_nested_singleton/output/output.txt
 count-fasta-seqs-key.sh
+util/exercise.pdf
+util/homework.pdf
