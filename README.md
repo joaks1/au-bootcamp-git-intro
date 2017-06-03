@@ -237,12 +237,10 @@ contains:
 If you run this script on BOTH fasta files, you want to get the
 following output:
 
-```bash
-$ sh count-fasta-seqs.sh example-seqs1.fasta example-seqs2.fasta
-2 example-seqs1.fasta
-3 example-seqs2.fasta
-5
-```
+    $ sh count-fasta-seqs.sh example-seqs1.fasta example-seqs2.fasta
+    2 example-seqs1.fasta
+    3 example-seqs2.fasta
+    5
 
 ### Some hints to get you coding
 
