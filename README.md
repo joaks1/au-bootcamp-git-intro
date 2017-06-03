@@ -1,9 +1,16 @@
 # Contents
 
- -  [Introduction](#introduction)
- -  [Exercise](#exercise)
- -  [Acknowledgments](#acknowledgments)
- -  [License](#license)
+-   [Introduction](#introduction)
+-   [Getting set up](#getting-set-up)
+-   [Exercise](#exercise)
+    -   [The goal](#the-goal)
+    -   [The script](#the-script)
+        -   [Input](#input)
+        -   [Output](#output)
+        -   [Examples](#examples)
+        -   [Some hints to get you coding](#some-hints-to-get-you-coding)
+-   [Acknowledgments](#acknowledgments)
+-   [License](#license)
 
 # Introduction
 
@@ -194,7 +201,7 @@ For each file, it should write a line with the number of sequences in the file,
 a space, and then the file NAME (NOT the path!), and a final line with the
 total number of sequences across all files.
     
-### Example
+### Examples
 
 In the same directory as this script, you should find an example fasta file
 named 'example-seqs1.fasta', which contains:
