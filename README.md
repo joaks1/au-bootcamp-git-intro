@@ -36,7 +36,7 @@ and (3) be working in a group with about 3 other people.
     ![Github fork button](util/images/github-fork-button.png)
 
     After a few seconds, the team member that forked should be looking at their
-    copy of the repo in their Github account account.
+    copy of the repo in their Github account.
 
 1.  Next, the person that forked the repo needs to add their team members as
     collaborators:
@@ -60,7 +60,7 @@ and (3) be working in a group with about 3 other people.
     repo. Make sure you are on the page of your **team member's** forked repo,
     **NOT** my copy of the repo (see image below).
 
-    ![Github copy URL](util/images/github-account-info.png)
+    ![Double check that you are on the correct Github page](util/images/github-account-info.png)
 
 1.  Click the 'Clone or download' button, and copy the URL of the repo via the
     'copy to clipboard' button. (**ALL** team members need to do this,
@@ -111,6 +111,7 @@ something like:
     README.md
     run_tests.sh
     tests
+    util
     
 The file `count-fasta-seqs.sh` is where you will write your shell script.  Go
 ahead and open it with your preferred text editor (probably `nano` if you are
