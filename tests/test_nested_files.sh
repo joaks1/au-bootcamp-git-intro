@@ -19,7 +19,12 @@ scriptname="count-fasta-seqs.sh"
 scriptpath="${basedir}/${scriptname}"
 
 inputdir="${testsubdir}/input"
-output="${testsubdir}/output/output.txt"
+outputdir="${testsubdir}/output"
+if [ ! -e "$outputdir" ]
+then
+    mkdir "$outputdir"
+fi
+output="${outputdir}/output.txt"
 expected="${testsubdir}/expected-output/expected-output.txt"
 
 total=0

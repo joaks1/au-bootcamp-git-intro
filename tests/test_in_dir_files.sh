@@ -22,7 +22,12 @@ inputdir="${testsubdir}/input"
 input="cyrtodactylus-philippinicus.fasta gekko-mindorensis.fasta insulasaurus-arborens.fasta"
 tempscriptpath="${inputdir}/${scriptname}"
 cp "$scriptpath" "$tempscriptpath"
-output="${testsubdir}/output/output.txt"
+outputdir="${testsubdir}/output"
+if [ ! -e "$outputdir" ]
+then
+    mkdir "$outputdir"
+fi
+output="${outputdir}/output.txt"
 expected="${testsubdir}/expected-output/expected-output.txt"
 
 total=0
