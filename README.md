@@ -253,7 +253,7 @@ for this. Currently, the only thing `count-fasta-seqs.sh` does is:
 
 What does this do? Try this:
 
-    $ count-fasta-seqs.sh larry curly moe
+    $ sh count-fasta-seqs.sh larry curly moe
 
 What is the output? It's just listing the arguments given to the script! Now
 try:
