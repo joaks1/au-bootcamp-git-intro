@@ -95,8 +95,8 @@
 #search for files included in the command line and print the total sequences and filename to the output
 for file in "$@"
 do
-        NUM=`grep '>' $file | wc -l`
-       	filename=`basename $file`
+        NUM=`grep '>' $file | wc -l`   #Takes fasta assigned from the command line by user, searches for the header line character ">" and pipes to  wc for counting; This is stored in variable NUM
+       	filename=`basename $file`      #Takes the filename and assigns it to the variable filename
 
 	echo $NUM $filename
 done
