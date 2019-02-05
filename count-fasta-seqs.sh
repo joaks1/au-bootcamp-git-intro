@@ -95,14 +95,15 @@
 #search for files included in the command line and print the total sequences and filename to the output
 for file in "$@"
 do
-        NUM=`grep '>' $file | wc -l`   #Takes fasta assigned from the command line by user, searches for the header line character ">" and pipes to  wc for counting; This is stored in variable NUM
-       	filename=`basename $file`      #Takes the filename and assigns it to the variable filename
+        num=`grep '>' $file | wc -l`   #Takes fasta assigned from the command line by user, searches for the header line character ">" and pipes to  wc for counting; This is stored in variable "num"
+       	filename=`basename $file`      #Takes the filename and assigns it to the variable "filename"
 
-	echo $NUM $filename
+	echo $num $filename
 done
 
 #The final line should have the total number of sequences across all files
-TOTAL=`grep '>' $@ | wc -l`
-echo $TOTAL
+total=`grep '>' $@ | wc -l`            #Takes the arguments given at cmdline, counts the occurances of ">",  and assigns it to the variable "total"
+
+echo $total
 
 #working code should echo the name of the file without the full pathname and count the number of sequences within that file
