@@ -1,5 +1,14 @@
 #!/bin/sh
 
+# PURPOSE: This script will count the number of sequence files you have in any given fasta files
+#
+# SYNTAX:  Type the following on your command line, assuming this script is in your path/current directory
+# 	   sh count-fasta-seqs.sh <paths to fasta files of interest>
+#
+#          If you wanted to count the number of sequences for every fasta file in your 
+#          current directory, you could run:
+# 	   sh count-fasta-seqs.sh *.fasta
+#
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
@@ -43,67 +52,17 @@
 #          2 example-seqs1.fasta
 #          3 example-seqs2.fasta
 #          5
-#
-#
-# Your goal is to work collaboratively with ~ 3 other people to edit this
-# script until it passes all the tests that have been written for it. I.e., you
-# should be able to run:
-#
-#   $ sh run_tests.sh
-#
-# and see 'All tests passed!' at the bottom of the output.
-#
-# To do this, one member of your group should fork this repository, and add the
-# other members as collaborators, so that all members of the team can be
-# pulling and pushing changes to the script to the collaborative remote
-# repository on Github.
-#
-# HINTS
-# The first thing you need to be able to do is access the paths to the fasta
-# files that were 'given to' this script. The variable "$@" will be very useful
-# for this. Let's take a look at what it gives us:
 
-# How are you going to work with each file path?
-# HINT: for loop (remember "for do done"?)
-#
-# To get the name of each file from the path, checkout the command 'basename':
-#
-#   $ man basename
-#
-# To count the number of sequences in each file, I recommend you checkout
-# 'grep' and 'wc':
-#
-#   $ man grep
-#   $ man wc
-#
-# WARNING about 'grep': ALWAYS quote the string that you are trying to find!
-# For example, do:
-#
-#   $ grep "string I want to find" file-i-want-to-find-it-in.txt
-#   **NOT**
-#   $ grep string I want to find file-i-want-to-find-it-in.txt # DON'T DO THIS!
-#
-# To keep a tally of the total number of sequences across all files, 'expr'
-# might be useful:
-#
-#   $ man expr
-#
-# Good luck!
-#
-# ADD YOUR CODE BELOW:
+# Searches for files included in the command line and prints the total sequences and filename to the output
+total=0                                #Initializes the variable 'total' & sets equal to zero
 
-#search for files included in the command line and print the total sequences and filename to the output
 for file in "$@"
 do
-        num=`grep '>' $file | wc -l`   #Takes fasta assigned from the command line by user, searches for the header line character ">" and pipes to  wc for counting; This is stored in variable "num"
-       	filename=`basename $file`      #Takes the filename and assigns it to the variable "filename"
+        num=`grep '>' $file | wc -l`   #Takes fasta assigned from the command line by user, searches for the header line character ">" and pipes to wc for counting; This is stored in variable "num"
+       	filename=`basename $file`      #Takes the filename for each fasta file and assigns it to the variable "filename"
 
-	echo $num $filename
+	echo $num $filename            #Prints the number of sequences in a particular file followed by the respective filename
+	total=`expr $total + $num`     #Adds the number of sequences in a particular file to 'total'
 done
 
-#The final line should have the total number of sequences across all files
-total=`grep '>' $@ | wc -l`            #Takes the arguments given at cmdline, counts the occurances of ">",  and assigns it to the variable "total"
-
-echo $total
-
-#working code should echo the name of the file without the full pathname and count the number of sequences within that file
+echo $total                            #Prints the total number of sequences across all of the given fasta files
