@@ -54,7 +54,7 @@
 #          5
 
 # Searches for files included in the command line and prints the total sequences and filename to the output
-total=0                                #Initializes the variable 'total' & sets equal to zero
+total=0                                #Initializes the variable 'total' & sets equal to zero (0)
 
 for file in "$@"
 do
