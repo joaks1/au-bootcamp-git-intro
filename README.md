@@ -329,6 +329,9 @@ might be useful:
 
     $ man expr
 
+**REMEMBER**: The goal of this exercise is to use git. Don't forget to commit
+and pull/push often.
+
 Good luck!
 
 
