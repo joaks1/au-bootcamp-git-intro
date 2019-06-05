@@ -127,54 +127,87 @@ tests currently fail. Try it:
     $ sh run_tests.sh
     
     ----------------------------------------------------------------------
-    testing: sh count-fasta-seqs.sh gekko-mindorensis.fasta
-    1c1,2
-    < gekko-mindorensis.fasta
-    ---
-    > 19 gekko-mindorensis.fasta
-    > 19
+    RUNNING TEST:
+      sh count-fasta-seqs.sh gekko-mindorensis.fasta
+    
+    *****************************************
     FAIL: Did not create the expected output!
+    *****************************************
+    Here is the expected output:
+    19 gekko-mindorensis.fasta
+    19
+    -----------------------------------------
+    Here is the observed output:
+    gekko-mindorensis.fasta
+    *****************************************
+    
     Passed 0 out of 1 tests
     ----------------------------------------------------------------------
     
+    
     ----------------------------------------------------------------------
-    testing: sh count-fasta-seqs.sh cyrtodactylus-philippinicus.fasta gekko-mindorensis.fasta insulasaurus-arborens.fasta
-    1c1,4
-    < cyrtodactylus-philippinicus.fasta gekko-mindorensis.fasta insulasaurus-arborens.fasta
-    ---
-    > 20 cyrtodactylus-philippinicus.fasta
-    > 19 gekko-mindorensis.fasta
-    > 32 insulasaurus-arborens.fasta
-    > 71
+    RUNNING TEST:
+      sh count-fasta-seqs.sh cyrtodactylus-philippinicus.fasta gekko-mindorensis.fasta insulasaurus-arborens.fasta
+    
+    *****************************************
     FAIL: Did not create the expected output!
+    *****************************************
+    Here is the expected output:
+    20 cyrtodactylus-philippinicus.fasta
+    19 gekko-mindorensis.fasta
+    32 insulasaurus-arborens.fasta
+    71
+    -----------------------------------------
+    Here is the observed output:
+    cyrtodactylus-philippinicus.fasta gekko-mindorensis.fasta insulasaurus-arborens.fasta
+    *****************************************
+    
     Passed 0 out of 1 tests
     ----------------------------------------------------------------------
     
+    
     ----------------------------------------------------------------------
-    testing: sh /home/jamie/Dropbox/projects/au-bootcamp-git-intro/count-fasta-seqs.sh /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_singleton/input/gekko-mindorensis.fasta
-    1c1,2
-    < /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_singleton/input/gekko-mindorensis.fasta
-    ---
-    > 19 gekko-mindorensis.fasta
-    > 19
+    RUNNING TEST:
+      sh count-fasta-seqs.sh /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_singleton/input/gekko-mindorensis.fasta
+    
+    *****************************************
     FAIL: Did not create the expected output!
+    *****************************************
+    Here is the expected output:
+    19 gekko-mindorensis.fasta
+    19
+    -----------------------------------------
+    Here is the observed output:
+    /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_singleton/input/gekko-mindorensis.fasta
+    *****************************************
+    
     Passed 0 out of 1 tests
     ----------------------------------------------------------------------
     
+    
     ----------------------------------------------------------------------
-    testing: sh /home/jamie/Dropbox/projects/au-bootcamp-git-intro/count-fasta-seqs.sh /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/*
-    1c1,4
-    < /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/cyrtodactylus-philippinicus.fasta /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/gekko-mindorensis.fasta /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/insulasaurus-arborens.fasta
-    ---
-    > 20 cyrtodactylus-philippinicus.fasta
-    > 19 gekko-mindorensis.fasta
-    > 32 insulasaurus-arborens.fasta
-    > 71
+    RUNNING TEST:
+      sh count-fasta-seqs.sh /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/*
+    
+    *****************************************
     FAIL: Did not create the expected output!
+    *****************************************
+    Here is the expected output:
+    20 cyrtodactylus-philippinicus.fasta
+    19 gekko-mindorensis.fasta
+    32 insulasaurus-arborens.fasta
+    71
+    -----------------------------------------
+    Here is the observed output:
+    /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/cyrtodactylus-philippinicus.fasta /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/gekko-mindorensis.fasta /home/jamie/Dropbox/projects/au-bootcamp-git-intro/tests/test_nested_files/input/insulasaurus-arborens.fasta
+    *****************************************
+    
     Passed 0 out of 1 tests
     ----------------------------------------------------------------------
+    
     
     Some tests failed (see messages above)
+
 
 Four tests were run and, as expected, they all failed.
 Your goal is to work collaboratively with your team members to add shell code
@@ -314,4 +347,3 @@ Oaks](http://phyletica.org) from the National Science Foundation (DEB 1656004).
 # License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.
-
