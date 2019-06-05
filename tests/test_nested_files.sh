@@ -35,24 +35,37 @@ input="${inputdir}/*"
 # run the script
 echo ""
 echo "----------------------------------------------------------------------"
-echo "testing: sh ${scriptpath} $input"
+echo "RUNNING TEST:"
+echo "  sh ${scriptname} $input"
 if sh "${scriptpath}" $input > "${output}"
 then
     # If it did not exit with an error, compare
     # the output produced to the expected output
-    if diff "${output}" "${expected}"
+    difference="$(diff "${output}" "${expected}")"
+    if [ -z "$difference" ]
     then
         # diff will succeed if the files are identical
         echo "Passed"
         passed=$(expr $passed + 1)
     else
+        echo ""
+        echo "*****************************************"
         echo "FAIL: Did not create the expected output!"
+        echo "*****************************************"
+        echo "Here is the expected output:"
+        cat "$expected"
+        echo "-----------------------------------------"
+        echo "Here is the observed output:"
+        cat "$output"
+        echo "*****************************************"
+        echo ""
     fi
 else
     echo "FAIL: Program failed to exit cleanly"
 fi
 total=$(expr $total + 1)
 
+echo "TEST FINISHED"
 echo "Passed $passed out of $total tests"
 echo "----------------------------------------------------------------------"
 
