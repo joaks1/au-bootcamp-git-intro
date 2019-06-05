@@ -1,6 +1,6 @@
 % Small Group Exercise 9: Introduction to version control
 % Jamie Oaks
-% June 8, 2017
+% June 6, 2019
 
 ---
 
