@@ -45,7 +45,7 @@ then
     if [ -z "$difference" ]
     then
         # diff will succeed if the files are identical
-        echo "Passed"
+        echo "PASSED!"
         passed=$(expr $passed + 1)
     else
         echo ""
@@ -65,9 +65,9 @@ else
 fi
 total=$(expr $total + 1)
 
-echo "TEST FINISHED"
 echo "Passed $passed out of $total tests"
 echo "----------------------------------------------------------------------"
+echo ""
 
 cd "$currentdir"
 
