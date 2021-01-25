@@ -45,11 +45,15 @@ and (3) be working in a group with about 3 other people.
 
         ![Github settings tab](util/images/github-settings-tab.png)
 
-    2.  Click 'Collaborators' in the settings menu along the left.
+    2.  Click 'Manage access' in the settings menu along the left.
 
         ![Github collaborators tab](util/images/github-collaborator-tab.png)
 
-    3.  You should be able to find your team members' accounts by searching for
+    3.  Click the 'Invite a collaborator' button.
+
+        ![Github collaborators tab](util/images/github-collaborator-invite.png)
+
+    4.  You should be able to find your team members' accounts by searching for
         their Github **username**.
 
 1.  Each team member that is added will receive an invitation via e-mail to
@@ -62,9 +66,9 @@ and (3) be working in a group with about 3 other people.
 
     ![Double check that you are on the correct Github page](util/images/github-account-info.png)
 
-1.  Click the 'Clone or download' button, and copy the URL of the repo via the
-    'copy to clipboard' button. (**ALL** team members need to do this,
-    including the one who forked the repo)
+1.  Click the 'Code' button. From the dropdown, make sure 'HTTPS' is selected
+    and copy the URL of the repo via the 'copy to clipboard' button. (**ALL**
+    team members need to do this, including the one who forked the repo)
 
     ![Github copy URL](util/images/github-clipboard-button.png)
 
