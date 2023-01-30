@@ -1,5 +1,16 @@
 #!/bin/sh
 
+total_seqs=0
+
+for file in "$@"; do
+  num_seqs=$(grep -c '^>' "$file")
+  filename=${file##*/}
+  echo "$num_seqs $filename"
+  total_seqs=$((total_seqs + num_seqs))
+done
+
+echo "Total sequences: $total_seqs"
+
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
