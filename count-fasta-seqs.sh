@@ -107,5 +107,7 @@ echo "$@"
 
 
 
-#Comment from CTracy: Good Job - there is just one additional line of code in here that is causing it to print an extra line.
-#See if you can find that line and comment it out and then reply to my comment below so I know you received this!
+#Comment from CTracy: Close - you are almost there but it is still failing the tests when you run "sh run_tests.sh"
+#There is one additional line of code in here that is causing it to print an extra line.
+#Additionally, if you look at your text output from your count-fasta-seqs.sh file it doesn't exactly match the desired output, which it needs to
+#See if you can remove some of the text you add in your output and get it to pass the tests when you run sh run_tests.sh
