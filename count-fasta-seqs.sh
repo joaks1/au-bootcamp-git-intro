@@ -102,3 +102,4 @@ done
 #There is one additional line of code in here that is causing it to print an extra line.
 #Additionally, if you look at your text output from your count-fasta-seqs.sh file it doesn't exactly match the desired output, which it needs to
 #See if you can remove some of the text you add in your output and get it to pass the tests when you run sh run_tests.sh
+#Reply now the code is working fine and producing the same exact output but the tests are still failed
