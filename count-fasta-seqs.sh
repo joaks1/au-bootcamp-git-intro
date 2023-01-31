@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#echo "$@"
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
@@ -62,9 +62,6 @@
 # The first thing you need to be able to do is access the paths to the fasta
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
-
-echo "$@"
-
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
 #
@@ -93,4 +90,16 @@ echo "$@"
 # Good luck!
 #
 # ADD YOUR CODE BELOW:
-
+total_seqs=0
+for file in "$@"; do
+  num_seqs=$(grep -c '^>' "$file")
+  filename=${file##*/}
+  echo "$num_seqs $filename"
+  total_seqs=$((total_seqs + num_seqs))
+done
+  echo $total_seqs
+#Comment from CTracy: Close - you are almost there but it is still failing the tests when you run "sh run_tests.sh"
+#There is one additional line of code in here that is causing it to print an extra line.
+#Additionally, if you look at your text output from your count-fasta-seqs.sh file it doesn't exactly match the desired output, which it needs to
+#See if you can remove some of the text you add in your output and get it to pass the tests when you run sh run_tests.sh
+#Reply now the code is working fine and producing the same exact output but the tests are still failed
