@@ -104,3 +104,4 @@ done
 #See if you can remove some of the text you add in your output and get it to pass the tests when you run sh run_tests.sh
 #Reply now the code is working fine and producing the same exact output but the tests are still failed
 #CTracy Update: It worked fine on my computer and passed all the tests :) I'll email to follow up though.
+Thanks
